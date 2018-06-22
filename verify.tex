@@ -28,6 +28,7 @@
         number = \arabic{subsubsection},
     }
 }
+\newcommand\cu[1]{\mathbf{#1}}
 \newcommand\pypx[2]{{{\partial {#1}} \over {\partial {#2}}}}
 \newcommand\pie{{}^\prime}
 \newcommand\nextsign{{}^\ast}
@@ -45,10 +46,9 @@
 
 \subsubsection{一般波动方程}
 
-对于电容率为 $\epsilon$，磁导率为 $\mu$，电导率为 $\sigma$
+对于电容率为 $\varepsilon$，磁导率为 $\mu$，电导率为 $\sigma$
 的无源均匀媒质，
 麦克斯韦方程是
-
 \begin{equation}%\label{eq81}
     \nabla \times \mathbf{E} = - \pypx{\mathbf{B}}{t}
 \end{equation}
@@ -64,6 +64,10 @@
     %\label{eq84}
     \nabla \cdot \mathbf{D} = \rho
 \end{equation}
+其中 $\mathbf{J} = \sigma\mathbf{E}$，$\cu{B} = \mu\cu{H}$，
+$\cu{D} = \varepsilon\cu{E}$. 于是有
+
+
 
 \subsubsection{介质中的平面波}
 
