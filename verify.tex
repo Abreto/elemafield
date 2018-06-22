@@ -28,10 +28,7 @@
         number = \arabic{subsubsection},
     }
 }
-\newcommand\unitV{\:\mathrm{V}}
-\newcommand\unitOhm{\:\Omega}
-\newcommand\pureunitA{\mathrm{A}}
-\newcommand\pureunitV{\mathrm{V}}
+\newcommand\pypx[2]{{{\partial {#1}} \over {\partial {#2}}}}
 \newcommand\pie{{}^\prime}
 \newcommand\nextsign{{}^\ast}
 \begin{document}
@@ -46,9 +43,35 @@
 
 \subsection{均匀平面波}
 
+\subsubsection{一般波动方程}
 
+对于电容率为 $\epsilon$，磁导率为 $\mu$，电导率为 $\sigma$
+的无源均匀媒质，
+麦克斯韦方程是
+
+\begin{equation}\ref{eq81}
+    \nabla \times \mathbf{E} = - \pypx{\mathbf{B}}{t}
+\end{equation}
+\begin{equation}
+    \ref{eq82}
+    \nabla \times \mathbf{H} = \mathbf{J} + \pypx{\mathbf{D}}{t}
+\end{equation}
+\begin{equation}
+    \ref{eq83}
+    \nabla \cdot \mathbf{B} = 0
+\end{equation}
+\begin{equation}
+    \ref{eq84}
+    \nabla \cdot \mathbf{D} = \rho
+\end{equation}
+
+\subsubsection{介质中的平面波}
 
 \subsection{圆极化波}
+
+\subsubsection{极化的概念}
+
+\subsubsection{圆极化}
 
 \subsection{同时满足两种性质}
 
