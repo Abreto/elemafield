@@ -28,7 +28,7 @@
         number = \arabic{subsubsection},
     }
 }
-\newcommand\cu[1]{\mathbf{#1}}
+\newcommand\cu[1]{\boldsymbol{#1}}
 \newcommand\pypx[2]{{{\partial {#1}} \over {\partial {#2}}}}
 \newcommand\pie{{}^\prime}
 \newcommand\nextsign{{}^\ast}
@@ -65,8 +65,24 @@
     \nabla \cdot \mathbf{D} = \rho
 \end{equation}
 其中 $\mathbf{J} = \sigma\mathbf{E}$，$\cu{B} = \mu\cu{H}$，
-$\cu{D} = \varepsilon\cu{E}$. 于是有
-
+$\cu{D} = \varepsilon\cu{E}$，
+$\rho = 0$. 于是有
+\begin{equation}
+    \label{eq81}
+    \nabla \times \cu{E} = -\mu \pypx{\cu{H}}{t}
+\end{equation}
+\begin{equation}
+    \label{eq82}
+    \nabla \times \cu{H} = \sigma\cu{E} + \varepsilon\pypx{\cu{E}}{t}
+\end{equation}
+\begin{equation}
+    \label{eq83}
+    \nabla \cdot \cu{H} = 0
+\end{equation}
+\begin{equation}
+    \label{eq84}
+    \nabla \cdot \cu{E} = 0
+\end{equation}
 
 
 \subsubsection{介质中的平面波}
