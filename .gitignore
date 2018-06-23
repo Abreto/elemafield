@@ -2,3 +2,5 @@ verify.aux
 verify.fdb_latexmk
 verify.fls
 verify.log
+verify.bbl
+verify.blg
