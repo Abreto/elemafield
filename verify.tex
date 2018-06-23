@@ -149,25 +149,31 @@ $\rho = 0$. 于是有
 
 接下来考虑常量 $\vecE$ 和 $\vecH$ 的分量都在与波的传播方向垂直的平面的波，
 这种波即被称为平面波.
-假定波沿 $z$ 方向传播，
+假定波沿 $x$ 方向传播，
 则 $\vecE$ 和 $\vecH$ 场
 均无纵向分量，即
 \begin{equation*}
-    E_z = 0 \quad H_z = 0
+    E_x = 0 \quad H_x = 0
 \end{equation*}
 
 \subsubsection{均匀平面波的特点}
 在平面波中，均匀平面波是最简单和最易理解的一种波.
 均匀的意思是
 在任意时刻在所在的平面中场的大小和方向都是不变的.
-所以对于沿 $z$ 方向传播的均匀平面波，
-$\vecE$ 和 $\vecH$ 都不是 $x$ 和 $y$ 的函数，即
+所以对于沿 $x$ 方向传播的均匀平面波，
+$\vecE$ 和 $\vecH$ 都不是 $z$ 和 $y$ 的函数，即
 \begin{equation*}
-    \pypx{\vecE}{x} = 0 \quad \pypx{\vecE}{y} = 0
+    \pypx{\vecE}{z} = 0 \quad \pypx{\vecE}{y} = 0
 \end{equation*}
 \begin{equation*}
-    \pypx{\vecH}{x} = 0 \quad \pypx{\vecH}{y} = 0
+    \pypx{\vecH}{z} = 0 \quad \pypx{\vecH}{y} = 0
 \end{equation*}
+这表明场分量只是 $x$(传播方向) 和 $t$(时间) 的函数，
+即
+\begin{equation}
+    E_y(x,t) = E_{ym}\cos{(\omega t - kx + \phi_y)}
+\end{equation}
+均匀平面波也可表述为同相面上，各个点的场强都是相等的.
 
 \subsection{圆极化波}
 
