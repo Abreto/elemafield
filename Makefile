@@ -1,5 +1,5 @@
 SRC=verify.tex
-RES=
+RES=wave.png
 verify.pdf: $(SRC) $(RES)
 	xelatex $(SRC)
 	xelatex $(SRC)
