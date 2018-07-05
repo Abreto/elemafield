@@ -29,6 +29,13 @@
         number = \arabic{subsubsection},
     }
 }
+\newcommand\inspic[4]{
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=#1\textwidth]{#2}
+\caption{#3}\label{#4}
+\end{figure}
+}
 \newcommand\myref[1]{(\ref{#1})}
 \newcommand\cu[1]{\boldsymbol{#1}}
 \newcommand\vecE{\cu{E}}
@@ -268,6 +275,8 @@ E_y(0,t) &= \cos{(\omega t + {\pi \over 2})} \notag \\
 
 综上所述，本节考虑的波既是均匀平面波、又是圆极化波，
 如图 \ref{fig1} 所示.
+
+\inspic{0.6}{wave.png}{该波啊啊}{fig1}
 
 \begin{figure}[htbp]
 \centering
